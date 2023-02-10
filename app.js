@@ -64,7 +64,7 @@ app.post("/file", (request, response, next) => {
         response.status(200).send({
             message: "File uploaded",
             filename: image.filename,
-            sizeInKb: `${image.size / 1024 | 0} Kb`
+            size: `${image.size / 1024 | 0} Kb`
         });
     })
 
